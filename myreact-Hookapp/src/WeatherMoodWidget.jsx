@@ -26,7 +26,13 @@ function Weathermood({ pic: selectedEmoji }) {
         {selectedEmoji} 
         <button type="button" onClick={handleClick}> 
           {count} 
-          <img src={image} alt={selectedEmoji} /> 
+          <img src={image}
+  alt={selectedEmoji}
+  style={{
+    width: "120px",
+    height: "120px",
+    objectFit: "contain"
+  }}/> 
         </button> 
       </p> 
  
